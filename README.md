@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/nft-card-preview-responsive-amHoHcXByv)
 - [Live Site URL](https://nft-preview-card-fronted.netlify.app/)
 
 ## My process
