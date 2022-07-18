@@ -7,6 +7,7 @@
     --veryDarkBlueLine: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
     --fontFamily: 'Outfit', sans-serif;
+    --boxShadow: 0px 4px 25px 5px rgba(0, 0, 0, 0.34);
 }
 * {
     box-sizing: border-box;
@@ -26,6 +27,7 @@ body {
 }
 .container {
     background-color: var(--veryDarkBlueCardBG);
+    box-shadow: var(--boxShadow);
     border-radius: 10px;
     padding: 20px;
     width: 350px;
@@ -112,4 +114,10 @@ p {
 }
 .attribution a { 
     color: var(--cyan) 
+}
+/*--------------Mobile Desigh-----------------------------*/
+@media (max-width: 720px) {
+    .container {
+        width: 80%;
+    }
 }
