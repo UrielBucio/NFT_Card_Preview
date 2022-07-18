@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --veryDarkBlueMainBG: hsl(217, 54%, 11%);
+    --veryDarkBlueCardBG: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --fontFamily: 'Outfit', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    align-items: center;
+    background-color: var(--veryDarkBlueMainBG);
+    color: var(--white);
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: var(--fontFamily);
+    font-size: 18px;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    background-color: var(--veryDarkBlueCardBG);
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+}
+.container_image {
+    background: transparent url(../src/img/image-equilibrium.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 280px;
+    overflow: hidden;
+}
+.hover_image {
+    background: var(--cyan) url(../src/img/icon-view.svg) no-repeat center center;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+}
+.hover_image:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.container_info h1{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 25px 0;
+}
+.container_price {
+    display: flex;
+    font-size: 0.9em;
+    margin: 20px 0;
+}
+.container_price div{
+    align-items: center;
+    display: flex;
+    width: 50%;
+}
+.clock {
+    justify-content: end;
+}
+.icon_ethereum, .icon_clock {
+    align-self: center;
+    height: 80%;
+    margin-right: 5px;
+}
+.details_ethereum {
+    color: var(--cyan);
+    font-weight: 400;
+}
+hr {
+    border: 0;
+    border-top: 1px solid var(--veryDarkBlueLine);
+    margin-bottom: 15px;
+}
+.author {
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+.author img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    height: 35px;
+    margin-right: 15px;
+}
+.author p {
+    font-size: 0.8em;
+}
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+p {
+    color: var(--softBlue);
+    font-size: 1em;
+    font-weight: 300;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--cyan) 
+}
